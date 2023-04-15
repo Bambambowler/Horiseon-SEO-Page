@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* added flex to the header display to keep the nav bar inside the header when the size of the window is reduced */
 header {
     display:flex;
     flex-wrap:wrap;
@@ -15,16 +16,13 @@ header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
-    
-    
+    color: #ffffff;   
 }
 
+/* font sizes were converted to em units throughout the project */
 header h1 {
     display: flex;
-    position:sticky; 
-    font-size: 3em;
-    
+    font-size: 3em;  
 }
 
 header h1 span {
@@ -37,7 +35,7 @@ header nav {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     
 }
 
@@ -46,8 +44,7 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
-    display: flex;
+header nav ul li { 
     margin-left: 25px;
 }
 
@@ -60,6 +57,7 @@ p {
     font-size: 1em;
 }
 
+/* main picture on the page */
 .hero {
     height: 800px;
     width: 100%;
@@ -69,6 +67,7 @@ p {
     background-position: center;
 }
 
+/* this section provides the CSS for the description of the main image (for accesssibility)*/
 .description {
     position: relative;
     height: 800px;
@@ -78,26 +77,38 @@ p {
     font-size: 0;
 }
 
-#digital-marketing {
-    min-height: 700px;
-    min-width: 100%;
-    visibility: hidden;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+}
+/* eliminated a lot of redundant code after correcting the semantic html */
+article {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+article h2 {
+    margin-bottom: 20px;
+    font-size: 2.25em;
+}
+
+main article img {
+    max-height: 200px;
+}
+
+#online-reputation-management img {
+    float: right;
+    margin-left: 25px;
+}
+
+#social-media-marketing img, #search-engine-optimization img {
+    float: left;
+    margin-right: 25px;
 }
 
 aside {
@@ -125,35 +136,6 @@ aside section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-article {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-
-main article img {
-    max-height: 200px;
-}
-
-#online-reputation-management img {
-    float: right;
-    margin-left: 25px;
-}
-
-#social-media-marketing img, #search-engine-optimization img {
-    float: left;
-    margin-right: 25px;
-}
-
-article h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 footer {
